@@ -4,6 +4,8 @@
 </div>
 
 # react-native-datepicker-modal
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-native-datepicker-modal.svg)](https://greenkeeper.io/)
 [![package version](https://img.shields.io/npm/v/react-native-datepicker-modal.svg?style=flat-square)](https://npmjs.org/package/react-native-datepicker-modal)
 [![package downloads](https://img.shields.io/npm/dm/react-native-datepicker-modal.svg?style=flat-square)](https://npmjs.org/package/react-native-datepicker-modal)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
