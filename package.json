@@ -1,0 +1,32 @@
+{
+  "name": "react-native-datepicker-modal",
+  "version": "1.0.0",
+  "description": "React Native DatePicker Modal Component for iOS/Android",
+  "main": "index.js",
+  "repository": "https://github.com/tiaanduplessis/react-native-datepicker-modal.git",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "datepicker",
+    "datepicker-component"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
