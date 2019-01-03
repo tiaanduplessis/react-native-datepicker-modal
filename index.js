@@ -180,8 +180,10 @@ class DatePicker extends Component {
                 </View>
                 <DatePickerIOS
                   mode='date'
-                  date={date || new Date()}
+                  date={startDate || new Date()}
                   onDateChange={this.handleDateChange}
+                  maximumDate={maxDate}
+                  minimumDate={minDate}
                   {...props}
                 />
               </View>
