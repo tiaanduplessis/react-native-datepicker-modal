@@ -38,9 +38,9 @@ import { StyleSheet, Text } from 'react-native'
 
 import ModalDatePicker from 'react-native-datepicker-modal'
 
-import colors from '../config/colors'
-import spacing from '../config/spacing'
-import fontSize from '../config/fontSize'
+import colors from './config/colors'
+import spacing from './config/spacing'
+import fontSize from './config/fontSize'
 
 const DatePicker = ({ style, ...props }) => (
   <ModalDatePicker

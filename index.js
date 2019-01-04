@@ -111,8 +111,8 @@ class DatePicker extends Component {
           })
 
           if (action !== DatePickerAndroid.dismissedAction) {
-            this.setState(() => ({ date: new Date(year, month, day) }));
-            this.props.onDateChanged(this.getDateObj());
+            this.setState(() => ({ date: new Date(year, month, day) }))
+            this.props.onDateChanged(this.getDateObj())
           }
         } catch (error) {
           onError(error)
