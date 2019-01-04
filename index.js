@@ -190,7 +190,7 @@ class DatePicker extends Component {
               </View>
             </View>
           </Modal>
-          {!showIOSModal && renderDate(this.getDateObj())}
+          {renderDate(this.getDateObj())}
         </TouchableOpacity>
       )
     }
