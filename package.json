@@ -1,6 +1,6 @@
 {
   "name": "react-native-datepicker-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native DatePicker Modal Component for iOS/Android",
   "main": "index.js",
   "repository": "https://github.com/tiaanduplessis/react-native-datepicker-modal.git",
