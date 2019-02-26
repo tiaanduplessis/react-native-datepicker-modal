@@ -110,8 +110,9 @@ class DatePicker extends Component {
             date: date || startDate
           })
 
+          const newDate = new Date(year, month, day)
           if (action !== DatePickerAndroid.dismissedAction) {
-            this.setState(() => ({ date: new Date(year, month, day) }))
+            this.setState(() => ({ date, startDate: date }))
             this.props.onDateChanged(this.getDateObj())
           }
         } catch (error) {
@@ -143,7 +144,7 @@ class DatePicker extends Component {
       )
     }
 
-    handleDateChange = date => this.setState({ date })
+    handleDateChange = date => this.setState({ date, startDate: date })
 
     render () {
       const { showIOSModal, date } = this.state
