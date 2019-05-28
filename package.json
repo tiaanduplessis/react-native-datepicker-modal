@@ -7,7 +7,7 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "scripts": {
-    "lint": "standard --fix"
+    "lint": "standard --fix *.js"
   },
   "peerDependencies": {
     "react": "*",
