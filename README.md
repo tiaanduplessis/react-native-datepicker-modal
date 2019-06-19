@@ -25,7 +25,7 @@
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
-$ npm installl react-native-datepicker-modal
+$ npm install react-native-datepicker-modal
 $ # OR
 $ yarn add react-native-datepicker-modal
 ```
