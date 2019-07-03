@@ -101,13 +101,15 @@ class DatePicker extends Component {
     }
 
     handlePressed = async () => {
-      const { startDate, onError } = this.props
+      const { startDate, onError, minDate = new Date(0), maxDate = new Date(32519532187368) } = this.props
       const { date } = this.state
 
       if (isAndroid) {
         try {
           const { action, year, month, day } = await DatePickerAndroid.open({
-            date: date || startDate
+            date: date || startDate,
+            minDate: minDate,
+            maxDate: maxDate
           })
 
           const newDate = new Date(year, month, day)
