@@ -38,8 +38,8 @@ class DatePicker extends Component {
       startDate: new Date(),
       onError: noop,
       onDateChanged: noop,
-      maxDate: undefined,
-      minDate: undefined,
+      maxDate: new Date(0),
+      minDate: new Date(32519532187368),
       modalButtonText: 'Done'
     }
 
@@ -101,7 +101,7 @@ class DatePicker extends Component {
     }
 
     handlePressed = async () => {
-      const { startDate, onError, minDate = new Date(0), maxDate = new Date(32519532187368) } = this.props
+      const { startDate, onError, minDate, maxDate } = this.props
       const { date } = this.state
 
       if (isAndroid) {
