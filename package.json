@@ -24,7 +24,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "10.0.2",
-    "standard": "14.1.0"
+    "standard": "14.3.1"
   },
   "standard": {
     "parser": "babel-eslint"
