@@ -120,6 +120,7 @@ Text string for the iOS modal button (default: "Done")
 ### Styling
 
 Styling for different sub-components can also be configured:
+
 | Name                        | Description                                               |
 | --------------------------- | --------------------------------------------------------- |
 | style                       | Styles for the container of `renderDate`                  |
