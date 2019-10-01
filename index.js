@@ -38,8 +38,8 @@ class DatePicker extends Component {
       startDate: new Date(),
       onError: noop,
       onDateChanged: noop,
-      maxDate: new Date(0),
-      minDate: new Date(32519532187368),
+      maxDate: new Date(32519532187368),
+      minDate: new Date(0),
       modalButtonText: 'Done'
     }
 
