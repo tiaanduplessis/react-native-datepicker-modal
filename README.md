@@ -120,11 +120,39 @@ Text string for the iOS modal button (default: "Done")
 ### Styling
 
 Styling for different sub-components can also be configured:
-  - `style`: Styles for the container of `renderDate`.
-  - `modalButtonStyle`: Styles for the modal button.
-  - `modalBtnContainerStyle`: Styles for the modal button container.
-  - `modalStyle`: Styles for the modal.
-  - `modalOverlayStyle`: Styles for the modal overlay.
+| Name                        | Description                                               |
+| --------------------------- | --------------------------------------------------------- |
+| style                       | Styles for the container of `renderDate`                  |
+| modalButtonStyle            | Styles for the modal button on iOS                        |
+| modalBtnContainerStyle      | Styles for the modal button container on iOS              |
+| modalStyle                  | Styles for the modal on iOS                               |
+| modalOverlayStyle           | Styles for the modal overlay on iOS                       |
+
+Styling on Android:
+
+We use `DatePickerAndroid` is and API for the native DatePicker Android module and this cannot be directly styled through JS props like real React Native components. 
+
+However, you can style the native android modules by changing the styles.xml in your android folder. It is located at `android/app/src/main/res/values/styles.xml` relative to your react-native project. 
+
+Example:
+```xml
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:datePickerDialogTheme">@style/Picker.Theme</item>
+    </style>
+
+    <style name="Picker.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#448AFF</item>
+        <item name="android:textColorPrimary">#212121</item>
+    </style>
+
+</resources>
+```
 
 ## Contribute
 
