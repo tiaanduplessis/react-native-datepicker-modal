@@ -157,6 +157,12 @@ Example:
 
 ## Contribute
 
+Run `npm test` for the JavaScript regression tests. They compile the component's
+complete source and use React/React Native host mocks with deliberately deferred
+state updates. These tests cover callback payloads, dismissal, error handling and
+iOS callback timing; they do not replace native Android/iOS testing or establish
+compatibility with React Native versions that removed the legacy picker APIs.
+
 1. Fork it and create your feature branch: git checkout -b my-new-feature
 2. Commit your changes: git commit -am 'Add some feature'
 3.Push to the branch: git push origin my-new-feature 

@@ -116,7 +116,7 @@ class DatePicker extends Component {
 
           if (action !== DatePickerAndroid.dismissedAction) {
             this.setState(() => ({ date: newDate, startDate: newDate }))
-            this.props.onDateChanged(this.getDateObj())
+            this.props.onDateChanged(this.getDateObj(newDate))
           }
         } catch (error) {
           onError(error)
@@ -126,9 +126,7 @@ class DatePicker extends Component {
       }
     }
 
-    getDateObj = () => {
-      const { date } = this.state
-
+    getDateObj = (date = this.state.date) => {
       return {
         date,
         year: date ? date.getFullYear() : '',
